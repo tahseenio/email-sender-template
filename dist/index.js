@@ -21,9 +21,9 @@ const sendEmail = () => {
         console.error(error);
     });
 };
-new CronJob('* * * * * *', () => {
-    console.log('You will see this message every second');
-    // sendEmail();
+new CronJob('0 20 * * *', () => {
+    console.log('You will see this message every day at 8pm');
+    sendEmail();
 }, null, true, 'Australia/Brisbane');
 // '0 20 * * *',
 //# sourceMappingURL=index.js.map

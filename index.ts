@@ -33,10 +33,10 @@ const sendEmail = (): void => {
 };
 
 new CronJob(
-  '* * * * * *',
+  '0 20 * * *',
   () => {
-    console.log('You will see this message every second');
-    // sendEmail();
+    console.log('You will see this message every day at 8pm');
+    sendEmail();
   },
   null,
   true,
