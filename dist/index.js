@@ -25,5 +25,4 @@ new CronJob('0 20 * * *', () => {
     console.log('You will see this message every day at 8pm');
     sendEmail();
 }, null, true, 'Australia/Brisbane');
-// '0 20 * * *',
 //# sourceMappingURL=index.js.map

@@ -42,5 +42,3 @@ new CronJob(
   true,
   'Australia/Brisbane'
 );
-
-// '0 20 * * *',
